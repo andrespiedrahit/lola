@@ -5,3 +5,11 @@ notifications:
       - andrespiedrahitabg@gmail.com
     on_success: never # default: change
     on_failure: always # default: always
+jobs:
+  include:
+    - stage: test
+      script: ./test 1
+    - # stage name not required, will continue to use `test`
+      script: ./test 2
+    - stage: deploy
+      script: ./deploy
