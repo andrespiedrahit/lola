@@ -1,3 +1,4 @@
-idioma : nodo_js
-node_js :
-  - " 7 "
+language: ruby
+rvm:
+ - 2.2
+ - jruby
