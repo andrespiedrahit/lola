@@ -1,3 +1,6 @@
 script:
 - bundle exec rake build
 - bundle exec rake builddoc
+install:
+  - bundle install --path vendor/bundle
+  - npm install
