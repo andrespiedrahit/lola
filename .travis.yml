@@ -1,6 +1,5 @@
-script:
-- bundle exec rake build
-- bundle exec rake builddoc
+install: ./install-dependencies.sh
 install:
   - bundle install --path vendor/bundle
   - npm install
+  script: bundle exec thor build
