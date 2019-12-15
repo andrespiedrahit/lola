@@ -1,6 +1,8 @@
-script: bundle exec thor build
-script:
-- bundle exec rake build
-- bundle exec rake builddoc
-script: bundle exec rake build && bundle exec rake builddoc
-gem install rake -v '0.9.6'
+jobs:
+  include:
+    - stage: test
+      script: ./test 1
+    - # stage name not required, will continue to use `test`
+      script: ./test 2
+    - stage: deploy
+      script: ./deploy
