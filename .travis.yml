@@ -1,2 +1,6 @@
+gem install bundler
+rvm pkg install zlib
+rvm remove 2.0.0 
+rvm install 2.0.0
 rvm get head
 rvm reinstall 2.0.0 --autolibs=3
