@@ -6,6 +6,3 @@ jobs:
       script: ./test 2
     - stage: deploy
       script: ./deploy
-      - etapa : prueba
-      guión : ./test 1
-    - No se requiere el nombre de la etapa # , continuará usando `test`
