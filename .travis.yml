@@ -2,7 +2,7 @@ jobs:
   include:
     - stage: test
       script: ./test 1
-    - # stage name not required, will continue to use `test`
+    - # stage name not required, will continue to use `test`s
       script: ./test 2
     - stage: deploy
       script: ./deploy
