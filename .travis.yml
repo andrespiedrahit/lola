@@ -1,5 +1,1 @@
-idioma : nodo_js
-node_js :
-  - " 7 "
-servicios :
-  - ventana acoplable
+language: ruby
