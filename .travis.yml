@@ -1,4 +1,4 @@
 install: php vendor/vendors.php
-stall:
+install:
   - ./bin/ci/install_dependencies.sh
   - php vendor/vendors.php
